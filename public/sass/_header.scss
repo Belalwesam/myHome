@@ -1,0 +1,71 @@
+.upper-header {
+    background-color: #55407d;
+    padding: 10px 30px;
+    .upper-header-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .connect {
+            ul {
+                li {
+                    display: inline;
+                    margin-right: 20px;
+                    span {
+                        color: #fff;
+                        font-weight: 700;
+                        font-size: 0.7rem;
+                        margin-left: 4px;
+                    }
+                }
+            }
+        }
+        .socials {
+            ul {
+                margin-right: 70px !important;
+                li {
+                    display: inline;
+                    margin-right: 7px;
+                    a {
+                        color: #fff;
+                        padding: 8px;
+                        border-radius: 50%;
+                        background-color: #adc867;
+                        transition: all 0.3 ease;
+                        display: inline-block;
+                        transition: all 0.2s ease;
+                        &:hover {
+                           transform: scale(1.1);
+                           box-shadow: 1px 1px 3px 1px rgba(240, 236, 236 ,0.1)
+                           , -1px 1px 3px 1px rgba(240, 236, 236 ,0.1)
+                           ,1px -1px 3px 1px rgba(240, 236, 236 ,0.1);
+                        }
+                    }
+                }
+            }
+            .login-register {
+               h5 {
+                   margin: 0 !important;
+                   color: #fff;
+                   font-size: 1rem;
+                   font-weight: 400;
+                   text-transform: uppercase;
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    transition: all 0.3s ease;
+                    &:hover {
+                        text-decoration: none;
+                        color: #adc867;
+                    }
+                }
+               }
+            }
+        }
+    }
+}
+/*Media Quries*/
+@media(max-width:900px) {
+    .upper-header {
+        display: none !important;
+    }
+}

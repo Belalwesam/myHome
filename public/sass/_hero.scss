@@ -1,0 +1,80 @@
+#hero-section {
+    padding-bottom: 6rem;
+    height: 85vh;
+    background-size: cover;
+    .hero-text {
+        h1 {
+            margin: 0 !important;
+            color: #fff;
+            padding: .5rem 2.3rem;
+            background-color: #adc867;
+            font-weight: 600;
+            display: inline-block;
+        }
+        form {
+            padding: 20px;
+            background-color: rgba(85,64,125,.67);
+            .form-wrapper {
+                display: grid;
+                grid-template-columns: repeat(4 , 1fr);
+                grid-gap: 10px;
+                input[type="text"] {
+                    display: block;
+                    padding: 0.8rem 1rem;
+                    font-weight: 600;
+                    font-size: 1rem;
+                    color: #2b2e35;
+                }
+                input[type="submit"] {
+                    font-weight: bold;
+                    color: #fff;
+                    background-color: #adc867;
+                    border: 0;
+                    transition: all 0.3s ease;
+                    outline: 0;
+                    &:hover {
+                        color: #adc867;
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+/*Media Queries*/
+@media (max-width:900px) {
+    .form-wrapper {
+        grid-template-columns: repeat(1 , 1fr) !important;
+        input[type="submit"] {
+            padding: 0.8rem 1rem;
+        }
+    }
+    h1 {
+        display: block !important;
+        font-size: 1.9rem;
+    }
+}
+.top-hero-page {
+    z-index: 100;
+    padding:3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    background-position: center 40%;
+    position: relative;
+    h2 {
+        color: #fff;
+        font-weight:600;    
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #1e1332;
+        opacity: 0.7;
+        z-index: -1;
+    }
+}
